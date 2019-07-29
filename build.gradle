@@ -13,15 +13,16 @@ repositories {
 
 dependencies {
     compile "org.codehaus.groovy:groovy-all:$groovy_version"
+    compile 'ch.qos.logback:logback-classic:1.2.3'
 }
 sourceSets {
     main {
         java { srcDirs = [] }
-        groovy { srcDirs =['src/main/java', 'src/main/groovy'] }
+        groovy { srcDirs = ['src/main/java', 'src/main/groovy'] }
     }
     test {
         java { srcDirs = [] }
-        groovy { srcDirs =['src/test/java', 'src/test/groovy'] }
+        groovy { srcDirs = ['src/test/java', 'src/test/groovy'] }
     }
 }
 
